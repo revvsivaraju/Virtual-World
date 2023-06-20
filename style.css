@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfbf0;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .viewer-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    height: 500px;
+  }
+
+  button {
+
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+  }
+
+  input {
+    padding: 7px;
+    padding-right: 100px;
+  }
+
+  

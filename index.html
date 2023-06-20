@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Visualize</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    #prompt {
+      resize: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Your Virtual World</h1>
+    <div class="input-group">
+      <label for="prompt">Imagine :</label>
+      <textarea id="prompt" placeholder="Enter a prompt" oninput="autoResize(this)"></textarea>
+    </div>
+    <div class="input-group">
+      <label for="style">Select Style:</label>
+      <select id="style">
+        <option value="35">Cyberpunk</option>
+        <option value="2">Fantasy Lands</option>
+        <option value="34">CG Film</option>
+        <option value="3">Anime Style Art</option>
+        <option value="5">Digital Painting</option>
+        <option value="6">Scenic</option>
+        <option value="11">Dreamlike</option>
+        <option value="29">Cartoon</option>
+      </select>
+    </div>
+    <button id="generateBtn">Generate Image</button>
+    <div class="viewer-container" id="viewerContainer"></div>
+    <p id="generationStatus" style="display: none;">Please Wait: Image Generation in Progress...</p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function autoResize(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = textarea.scrollHeight + 'px';
+    }
+  </script>
+</body>
+
+</html>
